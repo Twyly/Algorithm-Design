@@ -12,12 +12,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.testList()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func testList() {
+        let newList = List(initialKey: "Teddy")
+        newList.insert("Ian")
+        newList.insert("Nick")
+        newList.delete("Sam")
+        newList.delete("Ian")
+        newList.delete("Teddy")
+        newList.delete("Nick")
+        newList.printKeys()
+        newList.insert("Nick")
+        newList.printKeys()
+
     }
 
 
