@@ -14,6 +14,10 @@
 		F509A7391A64BB8C00C1636C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F509A7371A64BB8C00C1636C /* LaunchScreen.xib */; };
 		F509A7451A64BB8C00C1636C /* Algorithm_DesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509A7441A64BB8C00C1636C /* Algorithm_DesignTests.swift */; };
 		F509A74F1A64BBEB00C1636C /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509A74E1A64BBEB00C1636C /* List.swift */; };
+		F509A7531A64CF6C00C1636C /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509A7521A64CF6C00C1636C /* Containers.swift */; };
+		F58091C11A65C20900BF8505 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58091C01A65C20900BF8505 /* HashTable.swift */; };
+		F58091C31A65DA6E00BF8505 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58091C21A65DA6E00BF8505 /* BinarySearchTree.swift */; };
+		F58091C51A66111600BF8505 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58091C41A66111600BF8505 /* PriorityQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		F509A7431A64BB8C00C1636C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F509A7441A64BB8C00C1636C /* Algorithm_DesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm_DesignTests.swift; sourceTree = "<group>"; };
 		F509A74E1A64BBEB00C1636C /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		F509A7521A64CF6C00C1636C /* Containers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
+		F58091C01A65C20900BF8505 /* HashTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
+		F58091C21A65DA6E00BF8505 /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		F58091C41A66111600BF8505 /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 				F509A72E1A64BB8C00C1636C /* AppDelegate.swift */,
 				F509A7301A64BB8C00C1636C /* ViewController.swift */,
 				F509A74E1A64BBEB00C1636C /* List.swift */,
+				F509A7521A64CF6C00C1636C /* Containers.swift */,
+				F58091C01A65C20900BF8505 /* HashTable.swift */,
+				F58091C21A65DA6E00BF8505 /* BinarySearchTree.swift */,
+				F58091C41A66111600BF8505 /* PriorityQueue.swift */,
 				F509A7321A64BB8C00C1636C /* Main.storyboard */,
 				F509A7351A64BB8C00C1636C /* Images.xcassets */,
 				F509A7371A64BB8C00C1636C /* LaunchScreen.xib */,
@@ -216,7 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F509A7311A64BB8C00C1636C /* ViewController.swift in Sources */,
+				F509A7531A64CF6C00C1636C /* Containers.swift in Sources */,
+				F58091C31A65DA6E00BF8505 /* BinarySearchTree.swift in Sources */,
+				F58091C11A65C20900BF8505 /* HashTable.swift in Sources */,
 				F509A72F1A64BB8C00C1636C /* AppDelegate.swift in Sources */,
+				F58091C51A66111600BF8505 /* PriorityQueue.swift in Sources */,
 				F509A74F1A64BBEB00C1636C /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +427,7 @@
 				F509A74A1A64BB8C00C1636C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F509A74B1A64BB8C00C1636C /* Build configuration list for PBXNativeTarget "Algorithm DesignTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +436,7 @@
 				F509A74D1A64BB8C00C1636C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

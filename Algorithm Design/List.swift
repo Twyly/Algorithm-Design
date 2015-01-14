@@ -11,10 +11,15 @@ import Foundation
 class List<T: Comparable> {
     
     var head: Node<T>?
+    var length = 0
     
-    init(initialKey: T) {
+    convenience init(initialKey: T) {
+        self.init()
         head = Node<T>(key: initialKey)
+        length = 1
     }
+    
+    init() { }
     
     func search(key: T) -> Node<T>? {
         var currentNode: Node<T>? = head
@@ -32,6 +37,7 @@ class List<T: Comparable> {
         let oldHead = head
         head = Node(key: key)
         head!.next = oldHead
+        length++
     }
     
     // Returns Node that got deleted
@@ -40,11 +46,13 @@ class List<T: Comparable> {
         if key == head?.key {
             let oldHead = head
             head = head?.next
+            length--
             return oldHead
         }
         if let previous = predeccesor(key) {
             let nodeToDelete = previous.next
             previous.next = nodeToDelete?.next
+            length--
             return nodeToDelete
         } else {
            return nil
